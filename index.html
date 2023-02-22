@@ -102,12 +102,19 @@
             <p class="title gold">asian fav</p>
             <div style="display: flex; flex-direction: row; flex-wrap: wrap;" class="image-box" id="asian-fav">
                 <img src="fav/@.jpg" alt="">
+                
                 <script>
                     for (let i = 1; i <= 29; i++) {
                         let asian2 = document.createElement('img');
-                        const asian2_box = document.getElementById('asian-fav')
-                        asian2.src = `fav/1 (${i}).jpg`
-                        asian2_box.appendChild(asian2)
+                        const asian2_box = document.getElementById('asian-fav');
+                        asian2.src = `fav/1 (${i}).jpg`;
+                        asian2_box.appendChild(asian2);
+                        if(i == 2) {
+                            let b = document.createElement('img');
+                            b.src = 'https://i.medyaradar.com/storage/files/images/2021/12/18/zeynep-atilgan-4-g3co.jpg';
+                            asian2_box.appendChild(b);
+                            continue;
+                        }
                     }
                 </script>
             </div>
